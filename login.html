@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Need</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+        height: 10vh;
+        border-bottom: 1px solid #ccc;
+      }
+      .logo {
+        width: 150px;
+        height: 150px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+        font-size: 18px;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .icons i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .icons div {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 350px;
+        background-color: #f5f5f5;
+        border-radius: 7px;
+      }
+      .icons div input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        background-color: transparent;
+        text-indent: 20px;
+      }
+      .active {
+        color: #c11e1c;
+        border-bottom: 2px solid #c11e1c;
+        padding-bottom: 2px;
+        /* text-decoration: underline; */
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .icons div i {
+        padding: 0 10px;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90vh;
+        /* background-color: #c11e1c; */
+        padding: 0 5%;
+      }
+      main img {
+        width: 40%;
+        height: 80%;
+      }
+      .main_right {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main_right form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .main_right form h1 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      .main_right form label {
+        font-size: 20px;
+        color: #ccc;
+      }
+      .main_right form input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        padding: 0 10px;
+        border-radius: 5px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .main_right form button {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 20px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .main_right form button i {
+        padding-right: 10px;
+        color: #c11e1c;
+      }
+      .main_right form .login {
+        width: 100%;
+        height: 60px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background-color: #c11e1c;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login_text {
+        text-align: center;
+
+      }
+      .login_text a {
+        color: #c11e1c;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./image.png" alt="auto need logo" />
+
+      <ul type="none">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li class="active">Login</li>
+        <li><a href="./index.html">Sign Up</a></li>
+      </ul>
+
+      <div class="icons">
+        <div>
+          <input type="search" placeholder="Search" />
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <main>
+      <img src="./image.png" alt="logo auto need" />
+      <div class="main_right">
+        <form>
+          <h1>Log in to Exclusive</h1>
+          <label for="phone">Phone Number </label>
+          <input type="tel" id="phone" placeholder="Phone Number" />
+          <label for="password"></label>
+          <input type="password" id="password" placeholder="Password" />
+          <button class="login">Log in</button>
+          <button>
+            <i class="fa-brands fa-google"></i> Log in Width Goole
+          </button>
+
+          <p class="login_text">
+            Don’t have an account? <a href="./index.html">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
